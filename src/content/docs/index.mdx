@@ -36,6 +36,9 @@ hero:
 ---
 
 import Badge from "@/components/Badge.astro";
+import Button from "@/components/Button.astro";
+
+import Architecture from "@/components/Architecture.astro";
 
 import PartnersContainer from "@/components/Partners/PartnersContainer.astro";
 import PartnersGroup from "@/components/Partners/PartnersGroup.astro";
@@ -45,53 +48,72 @@ import TalksContainer from "@/components/Talks/TalksContainer.astro";
 import TalkCard from "@/components/Talks/TalkCard.astro";
 
 <PartnersContainer
-	groups={[
-		{ label: "Generative AI Companies", value: "gen-ai" },
-		{ label: "U.S. Government Agencies", value: "us-gov" },
-		{ label: "Enterprises", value: "enterprises" },
-	]}
+  groups={[
+    { label: "Generative AI Companies", value: "gen-ai" },
+    { label: "U.S. Government Agencies", value: "us-gov" },
+    { label: "Enterprises", value: "enterprises" },
+  ]}
 >
-	<PartnersGroup id="gen-ai">
-		<Partner alt="meta" src="/partners/companies/meta.png" />
-		<Partner alt="meta" src="/partners/companies/meta.png" />
-		<Partner alt="meta" src="/partners/companies/meta.png" />
-		<Partner alt="meta" src="/partners/companies/meta.png" />
-		<Partner alt="meta" src="/partners/companies/meta.png" />
-		<Partner alt="meta" src="/partners/companies/meta.png" />
-		<Partner alt="meta" src="/partners/companies/meta.png" />
-	</PartnersGroup>
+  <PartnersGroup id="gen-ai">
+    <Partner alt="meta" src="/partners/companies/meta.png" />
+    <Partner alt="meta" src="/partners/companies/meta.png" />
+    <Partner alt="meta" src="/partners/companies/meta.png" />
+    <Partner alt="meta" src="/partners/companies/meta.png" />
+    <Partner alt="meta" src="/partners/companies/meta.png" />
+    <Partner alt="meta" src="/partners/companies/meta.png" />
+    <Partner alt="meta" src="/partners/companies/meta.png" />
+  </PartnersGroup>
 </PartnersContainer>
 
 <TalksContainer>
-	<TalkCard
-		title="Navigating an AI-Enabled Future"
-		author={{ name: "Eric Schmidt", picture: "./speakers/eric_schmidt.png" }}
-		url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-	/>
-	<TalkCard
-		title="Understanding & Interacting With The Real World"
-		author={{ name: "Fei Fei Li", picture: "./speakers/fei_fei_li.png" }}
-		url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-	/>
-	<TalkCard
-		title="Building AI-Native Products & What’s Next For AI"
-		author={{ name: "Nat Friedman", picture: "./speakers/nat_friedman.png" }}
-		url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-	/>
-	<TalkCard
-		title="The Future of LLMs, Foundation & Generative Models"
-		author={{ name: "Greg Brockman", picture: "./speakers/greg_brockman.png" }}
-		url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-	/>
-	<TalkCard
-		title="The State of AI Adoption"
-		author={{ name: "Thomas Kurian", picture: "./speakers/thomas_kurian.png" }}
-		url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-	/>
+  <TalkCard
+    title="Navigating an AI-Enabled Future"
+    author={{ name: "Eric Schmidt", picture: "./speakers/eric_schmidt.png" }}
+    url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  />
+  <TalkCard
+    title="Understanding & Interacting With The Real World"
+    author={{ name: "Fei Fei Li", picture: "./speakers/fei_fei_li.png" }}
+    url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  />
+  <TalkCard
+    title="Building AI-Native Products & What’s Next For AI"
+    author={{ name: "Nat Friedman", picture: "./speakers/nat_friedman.png" }}
+    url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  />
+  <TalkCard
+    title="The Future of LLMs, Foundation & Generative Models"
+    author={{ name: "Greg Brockman", picture: "./speakers/greg_brockman.png" }}
+    url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  />
+  <TalkCard
+    title="The State of AI Adoption"
+    author={{ name: "Thomas Kurian", picture: "./speakers/thomas_kurian.png" }}
+    url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  />
 </TalksContainer>
 
 <Badge>AI for the Enterprise</Badge>
 
 ## Generative AI Infrastructure
 
-Whether you’re building your own models or applying foundation models to your business, data remains the biggest bottleneck to AI.
+<div class="text-lg my-12 w-2/3">
+  Whether you’re building your own models or applying foundation models to your
+  business, data remains the biggest bottleneck to AI.
+</div>
+
+<Button variant="secondary">Talk to a Generative AI Expert</Button>
+
+<Architecture />
+
+##### GENERATIVE AI PROVIDERS WE PARTNER WITH:
+
+<div class="mt-24 pt-24" />
+
+<Badge>Build AI</Badge>
+
+## Scale Data Engine
+
+<div class="text-lg my-12 w-2/3">
+  For AI teams, Scale Data Engine improves your models by improving your data.
+</div>
