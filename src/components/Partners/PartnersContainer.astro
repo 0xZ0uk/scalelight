@@ -1,0 +1,31 @@
+---
+interface Props {
+  groups: {
+    label: string;
+    value: string;
+  }[];
+}
+
+const { groups } = Astro.props;
+---
+
+<div>
+  <div class="pt-6 sm:pt-20 xl:pt-24">
+    <div class="hidden mb-12 text-sm leading-6 text-center text-neutral-400 lg:block">
+      Scale works with
+      {
+        groups?.map(({ label, value }, idx) => (
+          <>
+            <button class="bg-transparent inline-block relative cursor-pointer transition-colors duration-300 text-white p-0 m-0" type="button">
+              {label} 
+            </button>
+            {idx === groups.length - 1 ? "" : <span class={idx < groups.length - 2 ? "-ml-1" : "m-0"}>{idx < groups.length - 2 ? "," : "&"}</span>}
+          </>
+        ))
+      }
+    </div>
+  </div>
+  <div class="relative grid text-white">
+    <slot />
+  </div>
+</div>
