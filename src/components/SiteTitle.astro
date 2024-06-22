@@ -1,0 +1,12 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+const { siteTitle, siteTitleHref  } = Astro.props;
+---
+
+<a href={siteTitleHref} class="site-title flex items-center whitespace-nowrap">
+  <img
+    alt={siteTitle}
+    src="./src/assets/logo.svg"
+    class="h-5 w-auto"  
+  />
+</a>

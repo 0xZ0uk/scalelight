@@ -1,0 +1,35 @@
+---
+import Button from "./Button.astro";
+
+
+const { data } = Astro.props.entry;
+const { title = data.title, tagline, actions = [] } = data.hero || {};
+
+---
+
+<section class="py-18 h-[90vh] lg:py-20 bg-transparent pt-0 lg:pt-0 pb-0 lg:pb-0 w-full">
+  <div class="flex flex-col items-center justify-center pt-24 xl:pt-44">
+    <div class="relative z-10 text-center">
+      <h1 class="text-5xl font-light sm:leading-none leading-[1.1] sm:text-7xl xl:text-[89px] tracking-[-0.89px]" data-page-title set:html={title} />
+      {tagline && <h2 class="my-6 font-sans text-base text-[#F5F5F5] sm:px-0 font-medium leading-normal lg:my-[22px] lg:text-lg md:w-11/12 lg:w-full text-center lg:max-w-[800px] mx-auto" set:html={tagline} />}
+    </div>
+    {
+      actions.length > 0 && (
+        <div class="flex gap-2">
+          {actions.map(({ text, ...attrs }: { text: string, variant?: string }) => (
+            <Button {...attrs} set:html={text} />
+          ))}
+        </div>
+      )
+    }
+  </div>
+</section>
+
+<style>
+  .hero_hightlight {
+    text-align: center;
+    background: linear-gradient(50deg,#714dff,#9c83ff 31.28%,#e151ff 77.97%,#fff759 95.64%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>
