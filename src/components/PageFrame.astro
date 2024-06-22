@@ -5,7 +5,7 @@ import type { Props } from '@astrojs/starlight/props';
 const { hasSidebar, labels,  } = Astro.props;
 ---
 
-<div class="flex flex-col items-center">
+<div class="flex flex-col items-center w-full">
 	<header class="w-full flex justify-center items-center bg-black text-left relative z-50 bg-offpurple/20 backdrop-blur-[6px] md:backdrop-blur-0 md:bg-transparent"><slot name="header" /></header>
 	{
 		hasSidebar && (
@@ -19,5 +19,5 @@ const { hasSidebar, labels,  } = Astro.props;
 			</nav>
 		)
 	}
-	<div class="flex flex-col container"><slot /></div>
+	<div class="flex flex-col container justify-center items-center"><slot /></div>
 </div>

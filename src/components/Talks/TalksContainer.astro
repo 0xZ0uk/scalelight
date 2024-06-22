@@ -4,10 +4,12 @@ import TalksSlider from "./TalksSlider.astro";
 
 ---
 
-<div class="left-0 absolute py-12 w-full">
-  <div class="w-full">
-    <TalksSlider>
-      <slot />
-    </TalksSlider>
+<div class="container h-96">
+  <div class="left-0 py-12 absolute  w-full">
+    <div class="w-full">
+      <TalksSlider>
+        <slot />
+      </TalksSlider>
+    </div>
   </div>
 </div>
