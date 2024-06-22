@@ -39,6 +39,9 @@ import PartnersContainer from "@/components/Partners/PartnersContainer.astro";
 import PartnersGroup from "@/components/Partners/PartnersGroup.astro";
 import Partner from "@/components/Partners/Partner.astro";
 
+import TalksContainer from "@/components/Talks/TalksContainer.astro";
+import Talk from "@/components/Talks/Talk.astro";
+
 <PartnersContainer
 	groups={[
 		{ label: "Generative AI Companies", value: "gen-ai" },
@@ -56,3 +59,21 @@ import Partner from "@/components/Partners/Partner.astro";
 		<Partner alt="meta" src="/partners/companies/meta.png" />
 	</PartnersGroup>
 </PartnersContainer>
+
+<TalksContainer>
+	<Talk
+		title="Navigating an AI-Enabled Future"
+		author={{ name: "Greg Brockman", picture: "./speakers/greg_brockman.png" }}
+		url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+	/>
+	<Talk
+		title="Navigating an AI-Enabled Future"
+		author={{ name: "Greg Brockman", picture: "./speakers/greg_brockman.png" }}
+		url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+	/>
+	<Talk
+		title="Navigating an AI-Enabled Future"
+		author={{ name: "Greg Brockman", picture: "./speakers/greg_brockman.png" }}
+		url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+	/>
+</TalksContainer>
