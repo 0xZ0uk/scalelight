@@ -1,0 +1,85 @@
+---
+
+const partners = [
+  {
+    alt: "meta",
+    width: 100,
+    height: 22,
+    src: "/partners/companies/meta.png",
+  },
+  {
+    alt: "meta",
+    width: 100,
+    height: 22,
+    src: "/partners/companies/meta.png",
+  },
+  {
+    alt: "meta",
+    width: 100,
+    height: 22,
+    src: "/partners/companies/meta.png",
+  },
+  {
+    alt: "meta",
+    width: 100,
+    height: 22,
+    src: "/partners/companies/meta.png",
+  },
+  {
+    alt: "meta",
+    width: 100,
+    height: 22,
+    src: "/partners/companies/meta.png",
+  },
+  {
+    alt: "meta",
+    width: 100,
+    height: 22,
+    src: "/partners/companies/meta.png",
+  },
+  {
+    alt: "meta",
+    width: 100,
+    height: 22,
+    src: "/partners/companies/meta.png",
+  },
+];
+---
+
+<div class="pt-6 pb-12 sm:pb-16 sm:pt-20 xl:pb-16 xl:pt-24">
+  <div class="hidden mb-12 text-sm leading-6 text-center text-neutral-400 lg:block">
+    Scale works with
+    <button class="bg-transparent inline-block relative cursor-pointer transition-colors duration-300 text-white px-0" type="button">
+      Generative AI Companies
+    </button>,
+    <button class="bg-transparent inline-block relative cursor-pointer transition-colors duration-300 text-white px-0" type="button">
+      U.S. Government Agencies
+    </button> &
+    <button class="bg-transparent inline-block relative cursor-pointer transition-colors duration-300 text-white px-0" type="button">
+      Enterprises
+    </button>
+  </div>
+  <div class="relative grid text-white">
+    <ul class="items-center md:gap-y-16 justify-between flex lg:grid-cols-7 md:grid-cols-7 sm:grid-cols-4 grid-cols-4 gap-12 gap-y-10">
+      {
+        partners.map((partner) => (
+          <li class="flex justify-between w-full items-center">
+            <div class="relative">
+              <img
+                alt={partner.alt}
+                fetchpriority="high"
+                width={partner.width}
+                height={partner.height}
+                decoding="async"
+                data-nimg="1"
+                class="logo-grid_full-white__9DeNP"
+                style="color:transparent"
+                src={partner.src}
+              />
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</div>

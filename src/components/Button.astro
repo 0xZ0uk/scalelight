@@ -3,7 +3,7 @@ import { Icon } from "@astrojs/starlight/components";
 import { cva } from "class-variance-authority";
 
 const buttonVariants = cva(
-  "font-medium justify-center rounded-[10px] flex flex-nowrap whitespace-nowrap transition-translate duration-300 cursor-pointer group items-center h-full group leading-[150%] text-sm px-[30px] cursor-pointer",
+  "font-medium justify-center rounded-[10px] flex flex-nowrap whitespace-nowrap transition-translate duration-300 cursor-pointer group items-center h-full group leading-[150%] text-sm cursor-pointer",
   {
     variants: {
       variant: {
@@ -12,9 +12,9 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         minimal: "bg-transparent",      },
       size: {
-        default: "h-10 px-4 py-2",
-        sm: "h-9 rounded-md px-3",
-        lg: "h-11 rounded-md px-8",
+        default: "h-10 px-4 py-1",
+        sm: "h-9 py-1 px-2",
+        lg: "h-11 px-8",
         icon: "h-10 w-10",
       },
     },
