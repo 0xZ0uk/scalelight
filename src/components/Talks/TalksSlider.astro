@@ -1,0 +1,17 @@
+---
+---
+
+<div id="keen-slider" class="keen-slider absolute w-full pl-24">
+  <slot />
+</div>
+
+<script>
+  import KeenSlider from "keen-slider";
+  
+  const slider = new KeenSlider("#keen-slider", {
+    slides: {
+      perView: 2.5,
+      spacing: 25,
+    },
+  });
+</script>

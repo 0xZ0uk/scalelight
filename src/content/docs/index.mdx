@@ -43,37 +43,48 @@ import TalksContainer from "@/components/Talks/TalksContainer.astro";
 import Talk from "@/components/Talks/Talk.astro";
 
 <PartnersContainer
-	groups={[
-		{ label: "Generative AI Companies", value: "gen-ai" },
-		{ label: "U.S. Government Agencies", value: "us-gov" },
-		{ label: "Enterprises", value: "enterprises" },
-	]}
+  groups={[
+    { label: "Generative AI Companies", value: "gen-ai" },
+    { label: "U.S. Government Agencies", value: "us-gov" },
+    { label: "Enterprises", value: "enterprises" },
+  ]}
 >
-	<PartnersGroup id="gen-ai">
-		<Partner alt="meta" src="/partners/companies/meta.png" />
-		<Partner alt="meta" src="/partners/companies/meta.png" />
-		<Partner alt="meta" src="/partners/companies/meta.png" />
-		<Partner alt="meta" src="/partners/companies/meta.png" />
-		<Partner alt="meta" src="/partners/companies/meta.png" />
-		<Partner alt="meta" src="/partners/companies/meta.png" />
-		<Partner alt="meta" src="/partners/companies/meta.png" />
-	</PartnersGroup>
+  <PartnersGroup id="gen-ai">
+    <Partner alt="meta" src="/partners/companies/meta.png" />
+    <Partner alt="meta" src="/partners/companies/meta.png" />
+    <Partner alt="meta" src="/partners/companies/meta.png" />
+    <Partner alt="meta" src="/partners/companies/meta.png" />
+    <Partner alt="meta" src="/partners/companies/meta.png" />
+    <Partner alt="meta" src="/partners/companies/meta.png" />
+    <Partner alt="meta" src="/partners/companies/meta.png" />
+  </PartnersGroup>
 </PartnersContainer>
 
 <TalksContainer>
-	<Talk
-		title="Navigating an AI-Enabled Future"
-		author={{ name: "Greg Brockman", picture: "./speakers/greg_brockman.png" }}
-		url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-	/>
-	<Talk
-		title="Navigating an AI-Enabled Future"
-		author={{ name: "Greg Brockman", picture: "./speakers/greg_brockman.png" }}
-		url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-	/>
-	<Talk
-		title="Navigating an AI-Enabled Future"
-		author={{ name: "Greg Brockman", picture: "./speakers/greg_brockman.png" }}
-		url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-	/>
+  <Talk
+    title="Navigating an AI-Enabled Future"
+    author={{ name: "Greg Brockman", picture: "./speakers/greg_brockman.png" }}
+    idx={1}
+    url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  />
+  <Talk
+    title="Navigating an AI-Enabled Future"
+    author={{ name: "Greg Brockman", picture: "./speakers/greg_brockman.png" }}
+    idx={2}
+    url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+
+/>
+
+  <Talk
+    title="Navigating an AI-Enabled Future"
+    author={{ name: "Greg Brockman", picture: "./speakers/greg_brockman.png" }}
+    idx={3}
+    url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  />
+  <Talk
+    title="Navigating an AI-Enabled Future"
+    author={{ name: "Greg Brockman", picture: "./speakers/greg_brockman.png" }}
+    idx={4}
+    url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  />
 </TalksContainer>

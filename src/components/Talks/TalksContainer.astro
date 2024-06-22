@@ -1,6 +1,13 @@
 ---
+import TalksSlider from "./TalksSlider.astro";
+
+
 ---
 
-<div class="flex items-center justify-center gap-8 w-full">
-  <slot />
+<div class="z-30 left-0 absolute py-24 w-full">
+  <div class="w-full">
+    <TalksSlider>
+      <slot />
+    </TalksSlider>
+  </div>
 </div>

@@ -7,13 +7,14 @@ interface Props {
     name: string;
     picture: string;
   };
+  idx: number;
   url: string;
 }
 
-const { title, author, url } = Astro.props;
+const { title, author, url, idx } = Astro.props;
 ---
 
-<button class="events_event-card rounded-2xl relative text-left !opacity-100 !visible focus-visible:outline outline-[rgba(255,255,255,0.64)] outline-offset-[3px] bg-white/[0.01]">
+<button class:list={["keen-slider__slide !mt-0 events_event-card rounded-2xl relative text-left !opacity-100 !visible focus-visible:outline outline-[rgba(255,255,255,0.64)] outline-offset-[3px] bg-white/[0.01]", `number-slide${idx}`]}>
   <div class="flex items-center justify-start h-full transition-colors rounded-2xl bg-[#D1AAD7]/[0.01]">
     <img
       alt={author.name}
