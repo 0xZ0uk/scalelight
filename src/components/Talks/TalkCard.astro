@@ -20,18 +20,18 @@ const { title, author, url, idx } = Astro.props;
       alt={author.name}
       src={author.picture}
       loading="lazy"
-      width="150"
-      height="150"
+      width="190"
+      height="190"
       decoding="async"
       data-nimg="1"
       style="color:transparent"
       sizes="(min-width: 1280px) 190px, (min-width: 640px) 150px, 140px"
       class="rounded-l-2xl mt-auto xl:max-w-max -mb-2 sm:mb-0"
     />
-    <div class="w-full flex flex-col pr-2.5 sm:pr-4 lg:pr-10">
-      <p class="mb-0 pb-0 text-xs font-medium sm:text-sm text-accent-200">Tech Talk</p>
-      <p class="text-lg !mt-0 leading-6 sm:text-xl lg:text-xl line-clamp-2 sm:leading-[111%]">{title}</p>
-      <p class="text-xs font-medium sm:text-sm text-white/60">by {author.name}</p>
+    <div class="flex !mt-0 flex-col pr-2.5 sm:pr-4 lg:pr-10 -ml-3 sm:ml-0">
+      <p class="!mb-1 text-xs font-medium sm:text-sm text-accent-200">Tech Talk</p>
+      <p class="text-lg !mt-0 leading-6 sm:text-xl lg:text-2xl sm:leading-[111%] !mb-3 !sm:mb-6 !lg:mb-2 line-clamp-2">{title}</p>
+      <p class="text-xs !mt-0 font-medium sm:text-sm text-white/60">by {author.name}</p>
     </div>
   </div>
   <div class="absolute items-center duration-150 overflow-hidden justify-center w-6 h-6 z-50 group-hover:bg-white bg-white/10 border group-hover:border-white transition-colors ease-linear border-white/[0.13] flex rounded-full pointer-events-none right-3 bottom-3 sm:right-4 sm:bottom-4 sm:w-10 sm:h-10">
